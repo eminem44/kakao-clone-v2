@@ -7,8 +7,8 @@
 		<script
 			src="https://kit.fontawesome.com/5c49858d08.js"
 			crossorigin="anonymous"
-        ></script>
-        <link rel="stylesheet" href="css/styles.css">
+		></script>
+		<link rel="stylesheet" href="css/styles.css" />
 		<title>Chats | Kakao Clone</title>
 	</head>
 	<body>
@@ -22,66 +22,73 @@
 				<i class="fas fa-wifi"></i>
 				<span class="status-bar__battery-level">75%</span>
 				<i class="fas fa-battery-three-quarters"></i>
-            </div>
-        </div>
-        <header class="header">
-            <div class="header__column">
-                <h1 class="header__title">Chats</h1>
-            </div>
-            <div class="header__column">
-                <span class="header__icon">
-                    <i class="fas fa-search"></i>
-                </span>
-                <span class="header__icon">
-                    <i class="far fa-comment-plus"></i>
-                </span>
-                <span class="header__icon">
-                    <i class="fas fa-cog"></i>
-                </span>
-            </div>
-        </header>
-        <main class="chats">
-            <ul class="chats__list">
-                <li class="chats__chat chat">
-                    <a href="chat.html">
-                        <div class="chat__column">
-                            <!-- image style is all the same throughout all pages, so we make it global by assigning the global class name -->
-                            <img class="chat__avatar g-avatar" src="images/hi.jpg"></img>
-                            <div class="chat__content">
-                                <span class="chat__username">Lynn</span>
-                                <span class="chat__preview">Going home!</span>
-                            </div>
-                        </div>
-                        <div class="chat__column">
-                            <span class="chat__timestamp">Yesterday</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </main>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="friends.html" class="nav__list-link">
-                        <i class="far fa-user"></i>
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="index.html" class="nav__list-link">
-                        <i class="fas fa-comment"></i>
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="find.html" class="nav__list-link">
-                        <i class="fal fa-search"></i>
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="more.html" class="nav__list-link">
-                        <i class="fal fa-ellipsis-h-alt"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__column">
+				<h1 class="header__title">Chats</h1>
+			</div>
+			<div class="header__column">
+				<span class="header__icon">
+					<i class="fas fa-search"></i>
+				</span>
+				<span class="header__icon">
+					<i class="far fa-comment-plus"></i>
+				</span>
+				<span class="header__icon">
+					<i class="fas fa-cog"></i>
+				</span>
+			</div>
+		</header>
+		<main class="chats">
+			<ul class="chats__list">
+				<li class="chats__chat chat">
+					<a href="chat.html">
+						<div class="chats__chat friend friend--large">
+							<div class="friend__column">
+								<img src="images/hi.jpg" class="m-avatar friend__avatar" />
+								<div class="friend__content">
+									<span class="friend__name">
+										Lynn
+									</span>
+									<span class="friend__bottom-text">
+										Going Home!
+									</span>
+								</div>
+							</div>
+							<!-- friend except me only has 2 columns -->
+							<div class="friend__column">
+								<span class="chat__timestamp">Yesterday</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</main>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__list-item">
+					<a href="friends.html" class="nav__list-link">
+						<i class="far fa-user"></i>
+					</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="index.html" class="nav__list-link">
+						<div class="nav__badge">8</div>
+						<i class="fas fa-comment"></i>
+					</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="find.html" class="nav__list-link">
+						<i class="fal fa-search"></i>
+					</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="more.html" class="nav__list-link">
+						<i class="fal fa-ellipsis-h-alt"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</body>
 </html>
